@@ -52,14 +52,4 @@ class Application
     end 
   end 
   
-  def display_cart 
-    if @@cart.size > 0 
-      @@cart.each do |item|
-        resp.write "#{item}\n"
-      end 
-    else 
-      return "Your cart is empty."
-    end 
-  end 
-  
 end
