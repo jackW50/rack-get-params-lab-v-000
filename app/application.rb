@@ -34,7 +34,7 @@ class Application
     end
   end
   
-  def item_unique?(search_term)
+  def item_in_stock?(search_term)
     @@cart.include?(search_term)
   end 
   
