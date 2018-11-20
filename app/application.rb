@@ -1,4 +1,4 @@
-require 'pry'
+
 class Application
 
   @@items = ["Apples","Carrots","Pears"]
