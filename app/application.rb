@@ -41,6 +41,9 @@ class Application
   end 
   
   def add_to_cart(search_term) 
-    @@cart << search_term
+    if item_unique?
+      @@cart << search_term
+    else 
+      resp.write "#{search_term} already present in cart."
   end 
 end
