@@ -40,7 +40,7 @@ class Application
   end
   
   def item_unique?(search_term)
-    
+    @@cart.include?(search_term)
   end 
   
   def add_to_cart(search_term) 
