@@ -19,7 +19,7 @@ class Application
       add_to_cart(search_term)
     elsif req.path.match(/cart/)
       #display_cart
-      if @@cart.size > 0 
+      if @@cart.empty? 
         @@cart.each do |item|
           resp.write "#{item}\n"
         end 
