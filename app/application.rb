@@ -46,5 +46,8 @@ class Application
       @@cart << search_term
     else 
       resp.write "#{search_term} already present in cart."
+    end 
   end 
+  
+  
 end
