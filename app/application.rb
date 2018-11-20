@@ -18,7 +18,14 @@ class Application
       search_term = req.params["q"]
       add_to_cart(search_term)
     elsif req.path.match(/cart/)
-      display_cart
+      #display_cart
+      if @@cart.size > 0 
+        @@cart.each do |item|
+          resp.write "#{item}\n"
+        end 
+     else 
+        resp.write "Your cart is empty."
+    end 
     else
       resp.write "Path Not Found"
     end
