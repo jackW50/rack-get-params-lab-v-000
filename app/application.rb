@@ -19,7 +19,7 @@ class Application
       if item_unique?(search_term)
         add_to_cart
       else 
-        "Item already present."
+        resp.write "Item already present."
     elsif req.path.match(/cart/)
       @@cart.each do |item|
         resp.write "#{item}"
