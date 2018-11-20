@@ -46,16 +46,8 @@ class Application
     end
   end
   
-  def item_in_stock?(search_term)
-    @@items.include?(search_term)
-  end 
   
-  def add_to_cart(search_term) 
-    if item_in_stock?(search_term)
-      @@cart << search_term
-    else 
-      return "We don't have that item."
-    end 
-  end 
+  
+ 
   
 end
