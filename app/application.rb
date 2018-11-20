@@ -35,7 +35,7 @@ class Application
   end
   
   def item_in_stock?(search_term)
-    @@cart.include?(search_term)
+    @@items.include?(search_term)
   end 
   
   def add_to_cart(search_term) 
