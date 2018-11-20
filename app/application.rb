@@ -39,7 +39,7 @@ class Application
     end
   end
   
-  def item_unique?()
+  def item_unique?(search_term)
     
   end 
   
