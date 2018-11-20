@@ -43,6 +43,6 @@ class Application
     
   end 
   
-  def add_to_cart 
+  def add_to_cart(search_term) 
   end 
 end
