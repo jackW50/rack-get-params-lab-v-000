@@ -38,4 +38,11 @@ class Application
       return "Couldn't find #{search_term}"
     end
   end
+  
+  def item_unique?
+    
+  end 
+  
+  def add_to_cart 
+  end 
 end
