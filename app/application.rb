@@ -42,7 +42,7 @@ class Application
     if item_in_stock?(search_term)
       @@cart << search_term
     else 
-      resp.write "#{search_term} is not in stock."
+      resp.write "We don't have that item."
     end 
   end 
   
