@@ -16,8 +16,7 @@ class Application
       resp.write handle_search(search_term)
     elsif req.path.match(/add/)
       search_term = req.params["q"]
-      if item_unique?(search_term)
-        add_to_cart
+      add_to_cart(search_term)
       else 
         resp.write "Item already present."
     elsif req.path.match(/cart/)
