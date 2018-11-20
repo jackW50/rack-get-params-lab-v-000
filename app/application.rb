@@ -44,5 +44,6 @@ class Application
   end 
   
   def add_to_cart(search_term) 
+    @@cart << search_term
   end 
 end
