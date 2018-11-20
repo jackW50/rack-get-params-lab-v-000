@@ -16,7 +16,10 @@ class Application
       resp.write handle_search(search_term)
     elsif req.path.match(/add/)
       search_term = req.params["q"]
-      add_to_cart
+      if item_unique?
+        add_to_cart
+      else 
+        "Item already present."
     elsif req.path.match(/cart/)
       @@cart.each do |item|
         resp.write "#{item}"
