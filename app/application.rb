@@ -50,6 +50,6 @@ class Application
   end 
   
   def display_cart 
-    
+    if @@cart.size > 0 
   
 end
