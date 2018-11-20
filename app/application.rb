@@ -49,5 +49,7 @@ class Application
     end 
   end 
   
+  def display_cart 
+    
   
 end
