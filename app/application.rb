@@ -20,6 +20,7 @@ class Application
         @@cart << search_term
       else 
         resp.write "We don't have that item."
+      end 
     elsif req.path.match(/cart/)
       if !@@cart.empty?
         @@cart.each do |item|
